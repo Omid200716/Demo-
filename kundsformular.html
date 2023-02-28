@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/kundsformular.css">
+
+    <title>Kundens formulär</title>
+</head>
+<body>
+<h1>Bokning</h1>
+    <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <label for="service">Tjänst:</label>
+        <select id="service" name="service">
+          <option value="1-rums-lgh">1-rums lägenhet</option>
+          <option value="2-rums-lgh">2-rums lägenhet</option>
+          <option value="3-rums-lgh">3-rums lägenhet</option>
+          <option value="4-rums-lgh">4-rums lägenhet</option>
+          <option value="villa">Villa</option>
+          <option value="kontor">Kontor</option>
+        </select><br><br>
+        
+        <label for="date">Datum:</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <label for="time">Tid:</label>
+        <input type="time" id="time" name="time"><br><br>
+        
+        <label for="address">Adress:</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="notes">Önskemål/Meddelande:</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="button" value="Boka" onclick="bookCleaner()">
+      </form>
+    
+</body>
+</html>
